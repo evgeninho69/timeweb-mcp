@@ -1,0 +1,13 @@
+
+# --- secrets / локальное окружение ---
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.env
+config.env
+credentials.json
+secrets.json
+*.pem
+*.key
+*.p12

@@ -73,7 +73,8 @@ try:
         capture_output=True,
         text=True,
         timeout=60,
-        input="github_pat_ВАШ_ТОКЕН\n"
+        input=os.environ.get("GITHUB_TOKEN", "") + "
+"
     )
     print(f"STDOUT: {result.stdout}")
     print(f"STDERR: {result.stderr}")
